@@ -1,0 +1,1340 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>童颜长辈韩漫-家族年龄反差漫画专题</title>
+<meta name="description" content="童颜长辈韩漫专题：梳理外观年轻的长辈角色在家族日常、身份误会与代际关系中的叙事手法，收录《二十岁的外婆》等作品条目、更新日历、看点解析与读者讨论。">
+<meta name="keywords" content="童颜长辈韩漫">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f4e6d6'/%3E%3Ccircle cx='24' cy='26' r='11' fill='%23c2603f'/%3E%3Ccircle cx='42' cy='38' r='9' fill='%238a6bb5'/%3E%3Cpath d='M14 50h36' stroke='%232c2622' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  --paper:#fbf7f1;
+  --paper-2:#f4ece1;
+  --ink:#2c2622;
+  --ink-2:#5c534b;
+  --ink-3:#8a7f75;
+  --line:#e2d6c6;
+  --line-2:#d3c3ad;
+  --brand:#c2603f;
+  --brand-deep:#9c462a;
+  --brand-soft:#f7e3d8;
+  --violet:#8a6bb5;
+  --violet-soft:#ece5f4;
+  --green:#4f7a58;
+  --green-soft:#e4efe4;
+  --amber:#b98a2e;
+  --amber-soft:#f6edd8;
+  --shadow:0 2px 6px rgba(44,38,34,.06),0 10px 26px rgba(44,38,34,.07);
+  --radius:14px;
+  --radius-sm:9px;
+  --gap:clamp(16px,2.2vw,26px);
+  --pad:clamp(16px,3vw,30px);
+  --f-sans:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",system-ui,sans-serif;
+  --f-serif:"Songti SC","Noto Serif SC","Source Han Serif SC",Georgia,serif;
+  --sticky-h:96px;
+  --max:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--sticky-h) + 14px)}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--f-sans);font-size:16px;line-height:1.78;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:var(--brand-deep);text-decoration:none}
+a:hover{text-decoration:underline}
+:focus-visible{outline:3px solid var(--violet);outline-offset:2px;border-radius:4px}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-family:var(--f-serif);font-weight:700;letter-spacing:.01em}
+p{margin:0}
+ul,ol{margin:0;padding:0;list-style:none}
+button{font:inherit;color:inherit;cursor:pointer}
+
+/* ===== 吸顶区 ===== */
+.stick-wrap{position:sticky;top:0;z-index:60}
+.announce{
+  background:linear-gradient(90deg,#2c2622,#453a33 55%,#5a3b2c);
+  color:#f7ead9;font-size:13.5px;line-height:1.6;
+}
+.announce-in{
+  max-width:var(--max);margin:0 auto;padding:8px var(--pad);
+  display:flex;gap:12px;align-items:center;flex-wrap:wrap;
+}
+.announce b{color:#ffd8a8;font-weight:700;letter-spacing:.06em;flex:none}
+.announce .ann-txt{flex:1 1 320px;min-width:0}
+.announce a.ann-link{color:#ffd8a8;white-space:nowrap;flex:none}
+.announce a.ann-link:hover{color:#fff}
+
+.header{
+  background:rgba(251,247,241,.94);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+  box-shadow:0 1px 0 rgba(44,38,34,.03);
+}
+.head-in{
+  max-width:var(--max);margin:0 auto;padding:10px var(--pad);
+  display:flex;align-items:center;gap:18px;
+}
+.brand{display:flex;align-items:center;gap:10px;flex:none}
+.brand svg{width:38px;height:38px;flex:none}
+.brand-txt{display:flex;flex-direction:column;line-height:1.15}
+.brand-logo{font-family:var(--f-serif);font-size:19px;font-weight:700;color:var(--ink);letter-spacing:.04em}
+.brand-sub{font-size:10.5px;color:var(--ink-3);letter-spacing:.18em}
+.nav{display:flex;gap:2px;flex-wrap:wrap;margin-left:6px}
+.nav a{
+  font-size:14px;color:var(--ink-2);padding:7px 11px;border-radius:99px;
+  transition:background .18s,color .18s;white-space:nowrap;
+}
+.nav a:hover{background:var(--brand-soft);color:var(--brand-deep);text-decoration:none}
+.nav a.on{background:var(--brand);color:#fff}
+.head-right{margin-left:auto;display:flex;align-items:center;gap:10px;flex:none}
+.search{
+  display:flex;align-items:center;gap:6px;background:#fff;border:1px solid var(--line-2);
+  border-radius:99px;padding:4px 6px 4px 14px;
+}
+.search input{
+  border:0;background:transparent;font-size:14px;width:150px;padding:5px 0;color:var(--ink);
+  outline:none;font-family:var(--f-sans);
+}
+.search input::placeholder{color:var(--ink-3)}
+.search button{
+  border:0;background:var(--brand);color:#fff;border-radius:99px;
+  padding:6px 13px;font-size:13px;
+}
+.search button:hover{background:var(--brand-deep)}
+.entry-btn{
+  border:1px solid var(--brand);color:var(--brand-deep);background:transparent;
+  border-radius:99px;padding:7px 15px;font-size:13.5px;white-space:nowrap;
+}
+.entry-btn:hover{background:var(--brand);color:#fff;text-decoration:none}
+.menu-btn{
+  display:none;border:1px solid var(--line-2);background:#fff;border-radius:9px;
+  padding:7px 10px;font-size:13px;align-items:center;gap:6px;
+}
+.menu-btn .bars{display:inline-flex;flex-direction:column;gap:3px}
+.menu-btn .bars i{display:block;width:15px;height:2px;background:var(--ink);border-radius:2px}
+
+/* ===== 首屏 ===== */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(1100px 420px at 84% -12%,var(--violet-soft),transparent 62%),
+    radial-gradient(760px 380px at 6% 108%,var(--brand-soft),transparent 66%),
+    var(--paper-2);
+  border-bottom:1px solid var(--line);
+}
+.hero-in{
+  max-width:var(--max);margin:0 auto;padding:clamp(30px,5vw,58px) var(--pad) clamp(34px,5vw,60px);
+  display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(22px,4vw,50px);align-items:center;
+  position:relative;z-index:2;
+}
+.hero-kicker{
+  display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:.14em;
+  color:var(--brand-deep);background:#fff;border:1px solid var(--line-2);
+  border-radius:99px;padding:4px 13px;margin-bottom:16px;
+}
+.hero-kicker .dot{width:6px;height:6px;border-radius:50%;background:var(--brand)}
+.hero h1{
+  font-size:clamp(30px,4.6vw,50px);line-height:1.16;letter-spacing:.02em;
+  margin-bottom:14px;color:var(--ink);
+}
+.hero h1 .u{position:relative;display:inline-block}
+.hero h1 .u::after{
+  content:"";position:absolute;left:0;right:0;bottom:.06em;height:.32em;
+  background:var(--brand-soft);z-index:-1;border-radius:3px;
+}
+.hero-desc{font-size:15.5px;color:var(--ink-2);max-width:34em;line-height:1.85}
+.hero-desc strong{color:var(--ink);font-weight:700}
+.hero-cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.btn{
+  display:inline-flex;align-items:center;gap:7px;border-radius:99px;
+  padding:10px 20px;font-size:14.5px;border:1px solid transparent;
+  transition:transform .18s,background .18s,color .18s,box-shadow .18s;
+}
+.btn:hover{text-decoration:none;transform:translateY(-2px)}
+.btn-primary{background:var(--brand);color:#fff;box-shadow:0 6px 16px rgba(194,96,63,.26)}
+.btn-primary:hover{background:var(--brand-deep)}
+.btn-ghost{background:#fff;color:var(--ink);border-color:var(--line-2)}
+.btn-ghost:hover{border-color:var(--brand);color:var(--brand-deep)}
+.hero-stats{display:flex;gap:clamp(18px,3vw,34px);margin-top:26px;flex-wrap:wrap}
+.hero-stats div{display:flex;flex-direction:column}
+.hero-stats b{font-family:var(--f-serif);font-size:24px;color:var(--brand-deep);line-height:1.1}
+.hero-stats span{font-size:12.5px;color:var(--ink-3);letter-spacing:.04em}
+
+/* 首屏原创视觉：叠层卡片 + SVG 轮廓 */
+.hero-art{position:relative;min-height:320px}
+.hero-art svg.bg-shape{width:100%;height:auto;max-width:420px;margin:0 auto;display:block}
+.float-card{
+  position:absolute;background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  box-shadow:var(--shadow);padding:12px 14px;font-size:12.5px;color:var(--ink-2);
+  max-width:190px;line-height:1.55;
+}
+.float-card b{display:block;font-size:13.5px;color:var(--ink);margin-bottom:2px;font-family:var(--f-serif)}
+.float-card .tag{font-size:11px;color:var(--brand-deep);background:var(--brand-soft);padding:1px 7px;border-radius:99px;display:inline-block;margin-top:5px}
+.fc-a{top:4%;left:0}
+.fc-b{top:34%;right:2%}
+.fc-c{bottom:2%;left:12%}
+
+/* ===== 通用外壳 ===== */
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+.layout{
+  display:grid;grid-template-columns:minmax(0,1fr) 300px;
+  gap:clamp(20px,3vw,38px);padding:clamp(28px,4vw,48px) 0 10px;align-items:start;
+}
+.main-col{min-width:0;display:flex;flex-direction:column;gap:clamp(26px,3.4vw,42px)}
+.side-col{display:flex;flex-direction:column;gap:18px;position:sticky;top:calc(var(--sticky-h) + 14px)}
+
+section.block{scroll-margin-top:calc(var(--sticky-h) + 16px)}
+.block-head{display:flex;align-items:flex-end;gap:12px;margin-bottom:14px;flex-wrap:wrap}
+.block-head h2{font-size:clamp(20px,2.4vw,25px);color:var(--ink);letter-spacing:.02em}
+.block-head h2::before{
+  content:"";display:inline-block;width:7px;height:7px;border-radius:2px;background:var(--brand);
+  transform:translateY(-6px);margin-right:9px;
+}
+.block-head .lead{font-size:13px;color:var(--ink-3);line-height:1.6;flex:1 1 240px;min-width:0}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+.pad{padding:clamp(16px,2.2vw,24px)}
+.small{font-size:13px;color:var(--ink-3);line-height:1.65}
+.meta{font-size:12.5px;color:var(--ink-3);display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.meta .sep{width:3px;height:3px;border-radius:50%;background:var(--line-2)}
+.pill{display:inline-block;font-size:11.5px;padding:2px 9px;border-radius:99px;background:var(--paper-2);color:var(--ink-2);border:1px solid var(--line)}
+.pill.brand{background:var(--brand-soft);color:var(--brand-deep);border-color:#efc9b5}
+.pill.violet{background:var(--violet-soft);color:#5f4489;border-color:#d9cbe9}
+.pill.green{background:var(--green-soft);color:#3a6243;border-color:#c8ddc9}
+.pill.amber{background:var(--amber-soft);color:#7d5a16;border-color:#e7d4a8}
+
+/* 概览三卡 */
+.overview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--gap)}
+.ov{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:18px 18px 16px;display:flex;flex-direction:column;gap:8px}
+.ov .num{font-family:var(--f-serif);font-size:13px;color:var(--brand);letter-spacing:.1em}
+.ov h3{font-size:16.5px}
+.ov p{font-size:13.5px;color:var(--ink-2);line-height:1.72}
+.ov .kv{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:8px}
+
+/* 精选：不等权网格 */
+.feature-grid{display:grid;grid-template-columns:1.25fr 1fr 1fr;grid-template-rows:auto auto;gap:var(--gap)}
+.feat{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
+.feat.big{grid-row:span 2}
+.feat img{width:100%;height:130px;object-fit:cover;background:var(--paper-2)}
+.feat.big img{height:216px}
+.feat .fb{padding:14px 15px 16px;display:flex;flex-direction:column;gap:7px;flex:1}
+.feat h3{font-size:15.5px}
+.feat.big h3{font-size:18.5px}
+.feat p{font-size:13px;color:var(--ink-2);line-height:1.7}
+.feat .meta{margin-top:auto;padding-top:6px}
+
+/* 最新更新：时间线 */
+.timeline{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:6px clamp(14px,2vw,22px)}
+.tl-item{display:grid;grid-template-columns:88px 1fr auto;gap:14px;align-items:start;padding:14px 0;border-bottom:1px dashed var(--line)}
+.tl-item:last-child{border-bottom:0}
+.tl-date{font-size:12.5px;color:var(--ink-3);font-family:var(--f-serif);letter-spacing:.03em;padding-top:2px}
+.tl-date b{display:block;font-size:15px;color:var(--ink);font-family:var(--f-sans)}
+.tl-body h3{font-size:15px;margin-bottom:3px}
+.tl-body p{font-size:13px;color:var(--ink-2);line-height:1.68}
+.tl-tag{font-size:11.5px;color:var(--ink-3);white-space:nowrap;padding-top:4px}
+
+/* 分类入口 标签索引 */
+.tag-index{display:flex;flex-wrap:wrap;gap:9px}
+.tag-index a{
+  display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line-2);
+  border-radius:99px;padding:8px 15px;font-size:13.5px;color:var(--ink);transition:border-color .18s,background .18s,transform .18s;
+}
+.tag-index a:hover{border-color:var(--brand);background:var(--brand-soft);color:var(--brand-deep);text-decoration:none;transform:translateY(-2px)}
+.tag-index a .c{font-size:11.5px;color:var(--ink-3)}
+
+/* 深度解析 */
+.deep{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:clamp(18px,2.6vw,30px)}
+.deep > p{font-size:15px;color:var(--ink-2);line-height:1.9;margin-bottom:14px}
+.deep h3{font-size:17.5px;margin:24px 0 10px;color:var(--ink);padding-left:12px;border-left:4px solid var(--brand);line-height:1.4}
+.deep p{font-size:14.5px;color:var(--ink-2);line-height:1.9;margin-bottom:12px}
+.deep strong{color:var(--ink);font-weight:700}
+.deep .callout{
+  background:var(--paper-2);border:1px solid var(--line);border-left:4px solid var(--violet);
+  border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:13px 16px;margin:16px 0;
+  font-size:13.5px;color:var(--ink-2);line-height:1.78;
+}
+.deep .callout b{color:#5f4489}
+.judge-table{width:100%;border-collapse:collapse;font-size:13px;margin:14px 0 6px}
+.judge-table th,.judge-table td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top;line-height:1.6}
+.judge-table th{background:var(--paper-2);font-weight:700;color:var(--ink);white-space:nowrap}
+.judge-table td{color:var(--ink-2)}
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+
+/* 体验指南：编号步骤 */
+.steps{counter-reset:s;display:flex;flex-direction:column;gap:0}
+.step{
+  display:grid;grid-template-columns:42px 1fr;gap:14px;padding:14px 0;border-bottom:1px solid var(--line);
+}
+.step:last-child{border-bottom:0}
+.step .n{
+  counter-increment:s;width:34px;height:34px;border-radius:50%;background:var(--brand-soft);
+  color:var(--brand-deep);display:flex;align-items:center;justify-content:center;
+  font-family:var(--f-serif);font-weight:700;font-size:15px;
+}
+.step .n::before{content:counter(s,decimal-leading-zero)}
+.step h3{font-size:15px;margin-bottom:3px}
+.step p{font-size:13.5px;color:var(--ink-2);line-height:1.72}
+.step p b{color:var(--ink)}
+
+/* 对照面板 */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#fff}
+.cmp-col{padding:16px 18px}
+.cmp-col + .cmp-col{border-left:1px solid var(--line);background:linear-gradient(180deg,#fcf9f5,#fff)}
+.cmp-col h3{font-size:15px;margin-bottom:9px;display:flex;align-items:center;gap:7px}
+.cmp-col h3 .badge{font-size:11px;padding:1px 8px;border-radius:99px;background:var(--violet-soft);color:#5f4489}
+.cmp-col ul{display:flex;flex-direction:column;gap:8px}
+.cmp-col li{font-size:13.5px;color:var(--ink-2);line-height:1.68;padding-left:16px;position:relative}
+.cmp-col li::before{content:"";position:absolute;left:2px;top:.62em;width:6px;height:6px;border-radius:2px;background:var(--line-2)}
+.cmp-col li b{color:var(--ink)}
+
+/* 榜单 */
+.rank-list{display:flex;flex-direction:column}
+.rank-item{display:grid;grid-template-columns:44px 1fr auto;gap:12px;align-items:center;padding:13px 0;border-bottom:1px dashed var(--line)}
+.rank-item:last-child{border-bottom:0}
+.rank-no{font-family:var(--f-serif);font-size:21px;color:var(--line-2);font-weight:700;text-align:center}
+.rank-item:nth-child(1) .rank-no{color:var(--brand)}
+.rank-item:nth-child(2) .rank-no{color:var(--violet)}
+.rank-item:nth-child(3) .rank-no{color:var(--green)}
+.rank-body h3{font-size:14.5px;margin-bottom:2px}
+.rank-body p{font-size:12.5px;color:var(--ink-3);line-height:1.6}
+.rank-score{font-size:12.5px;color:var(--brand-deep);font-variant-numeric:tabular-nums;white-space:nowrap}
+
+/* FAQ */
+.faq{display:flex;flex-direction:column;gap:8px}
+details.qa{background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);overflow:hidden}
+details.qa summary{
+  list-style:none;cursor:pointer;padding:13px 44px 13px 16px;font-size:14.5px;font-weight:700;
+  position:relative;color:var(--ink);line-height:1.6;
+}
+details.qa summary::-webkit-details-marker{display:none}
+details.qa summary::after{
+  content:"+";position:absolute;right:15px;top:50%;transform:translateY(-50%);
+  font-size:19px;color:var(--brand);font-weight:400;transition:transform .2s;
+}
+details.qa[open] summary::after{content:"–"}
+details.qa[open] summary{background:var(--paper-2)}
+details.qa .ans{padding:12px 16px 15px;font-size:13.5px;color:var(--ink-2);line-height:1.82;border-top:1px solid var(--line)}
+details.qa .ans b{color:var(--ink)}
+
+/* 评论 */
+.review-list{display:flex;flex-direction:column;gap:12px}
+.review{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px}
+.rv-head{display:flex;align-items:center;gap:9px;margin-bottom:7px;flex-wrap:wrap}
+.avatar{width:30px;height:30px;border-radius:50%;background:var(--brand-soft);color:var(--brand-deep);display:flex;align-items:center;justify-content:center;font-family:var(--f-serif);font-size:13px;flex:none}
+.avatar.v{background:var(--violet-soft);color:#5f4489}
+.avatar.g{background:var(--green-soft);color:#3a6243}
+.avatar.a{background:var(--amber-soft);color:#7d5a16}
+.rv-name{font-size:13.5px;font-weight:700;color:var(--ink)}
+.rv-time{font-size:12px;color:var(--ink-3);margin-left:auto}
+.rv-text{font-size:13.5px;color:var(--ink-2);line-height:1.78}
+.rv-text b{color:var(--ink)}
+.rv-ref{font-size:12px;color:var(--ink-3);margin-top:6px}
+.stars{font-size:12px;color:var(--amber);letter-spacing:1px}
+
+/* 资讯列表 */
+.news-list{display:flex;flex-direction:column;gap:0;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:0 clamp(14px,2vw,22px)}
+.news-item{padding:13px 0;border-bottom:1px dashed var(--line);display:grid;grid-template-columns:1fr auto;gap:12px;align-items:baseline}
+.news-item:last-child{border-bottom:0}
+.news-item h3{font-size:14.5px;margin-bottom:3px}
+.news-item p{font-size:12.5px;color:var(--ink-3);line-height:1.62}
+.news-src{font-size:11.5px;color:var(--ink-3);white-space:nowrap}
+
+/* 相关推荐标签 */
+.reco{display:flex;flex-wrap:wrap;gap:9px}
+.reco a{
+  display:inline-block;background:#fff;border:1px solid var(--line-2);border-radius:8px;
+  padding:7px 13px;font-size:13px;color:var(--ink-2);transition:border-color .18s,color .18s,background .18s;
+}
+.reco a:hover{border-color:var(--brand);color:var(--brand-deep);background:var(--brand-soft);text-decoration:none}
+
+/* 侧栏 */
+.side-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:15px 16px}
+.side-card h3{font-size:14.5px;margin-bottom:10px;display:flex;align-items:center;gap:7px}
+.side-card h3::before{content:"";width:5px;height:14px;border-radius:2px;background:var(--brand)}
+.side-nav{display:flex;flex-direction:column;gap:2px}
+.side-nav a{
+  display:block;font-size:13.5px;color:var(--ink-2);padding:7px 10px;border-radius:8px;
+  border-left:2px solid transparent;transition:background .16s,color .16s,border-color .16s;
+}
+.side-nav a:hover{background:var(--paper-2);color:var(--brand-deep);text-decoration:none}
+.side-nav a.on{background:var(--brand-soft);color:var(--brand-deep);border-left-color:var(--brand);font-weight:700}
+.side-list li{font-size:13px;color:var(--ink-2);line-height:1.62;padding:7px 0;border-bottom:1px dashed var(--line);display:flex;gap:8px}
+.side-list li:last-child{border-bottom:0}
+.side-list li .i{color:var(--brand);font-family:var(--f-serif);font-size:12.5px;flex:none;padding-top:1px}
+.side-list a{color:var(--ink-2)}
+.side-list a:hover{color:var(--brand-deep)}
+.side-note{font-size:12px;color:var(--ink-3);line-height:1.7;background:var(--paper-2);border-radius:var(--radius-sm);padding:10px 12px;border:1px dashed var(--line-2)}
+
+/* 搜索反馈 */
+.search-feedback{
+  display:none;background:#fff;border:1px solid var(--line-2);border-radius:var(--radius-sm);
+  padding:10px 14px;font-size:13.5px;color:var(--ink-2);margin-bottom:14px;
+}
+.search-feedback.show{display:block}
+.search-feedback b{color:var(--brand-deep)}
+mark{background:#ffe6a8;color:var(--ink);padding:0 2px;border-radius:3px}
+
+/* 页尾 */
+.footer{margin-top:clamp(30px,4vw,50px);background:#2c2622;color:#d8cbbd}
+.foot-in{max-width:var(--max);margin:0 auto;padding:clamp(28px,4vw,44px) var(--pad) 18px}
+.foot-top{display:grid;grid-template-columns:1.35fr 1fr 1fr 1fr;gap:var(--gap);padding-bottom:24px;border-bottom:1px solid rgba(216,203,189,.18)}
+.foot-brand{display:flex;flex-direction:column;gap:10px}
+.foot-brand .fb-logo{display:flex;align-items:center;gap:10px}
+.foot-brand .fb-logo svg{width:34px;height:34px}
+.foot-brand .fb-logo span{font-family:var(--f-serif);font-size:19px;color:#fbf7f1;letter-spacing:.05em}
+.foot-brand p{font-size:13px;color:#a99a8a;line-height:1.75;max-width:26em}
+.foot-col h4{font-size:13.5px;color:#fbf7f1;margin-bottom:10px;letter-spacing:.06em}
+.foot-col a{display:block;font-size:13px;color:#b8a898;padding:3.5px 0;line-height:1.6}
+.foot-col a:hover{color:#ffd8a8;text-decoration:none}
+.foot-bottom{padding-top:16px;display:flex;flex-wrap:wrap;gap:8px 20px;font-size:12px;color:#8d7f71;line-height:1.7}
+.foot-bottom .sp{flex:1 1 auto}
+.foot-bottom b{color:#b8a898;font-weight:400}
+
+/* 回到顶部 */
+.to-top{
+  position:fixed;right:18px;bottom:20px;z-index:70;width:44px;height:44px;border-radius:50%;
+  border:1px solid var(--line-2);background:#fff;color:var(--brand-deep);box-shadow:var(--shadow);
+  display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;
+  transform:translateY(8px);transition:opacity .22s,transform .22s,visibility .22s;
+}
+.to-top.show{opacity:1;visibility:visible;transform:translateY(0)}
+.to-top:hover{background:var(--brand);color:#fff;border-color:var(--brand)}
+
+/* 平板 */
+@media (max-width:1000px){
+  .layout{grid-template-columns:1fr}
+  .side-col{position:static;order:2}
+  .hero-in{grid-template-columns:1fr}
+  .hero-art{min-height:250px;order:2}
+  .overview-grid{grid-template-columns:repeat(2,1fr)}
+  .feature-grid{grid-template-columns:1fr 1fr}
+  .feat.big{grid-column:span 2;grid-row:auto}
+  .feat.big img{height:190px}
+  .foot-top{grid-template-columns:1fr 1fr}
+  .nav{display:none}
+  .nav.open{display:flex;position:absolute;left:0;right:0;top:100%;background:var(--paper);border-bottom:1px solid var(--line);padding:10px var(--pad);box-shadow:var(--shadow);z-index:65;gap:6px}
+  .head-in{position:relative;flex-wrap:wrap}
+  .menu-btn{display:inline-flex}
+  .head-right{margin-left:auto}
+}
+@media (max-width:640px){
+  body{font-size:15.5px}
+  .head-in{gap:10px}
+  .search input{width:104px}
+  .brand-sub{display:none}
+  .brand-logo{font-size:17px}
+  .entry-btn{padding:6px 11px;font-size:12.5px}
+  .overview-grid{grid-template-columns:1fr}
+  .feature-grid{grid-template-columns:1fr}
+  .feat.big{grid-column:auto}
+  .compare{grid-template-columns:1fr}
+  .cmp-col + .cmp-col{border-left:0;border-top:1px solid var(--line)}
+  .tl-item{grid-template-columns:1fr;gap:4px}
+  .tl-tag{display:none}
+  .news-item{grid-template-columns:1fr}
+  .news-src{color:var(--ink-3)}
+  .foot-top{grid-template-columns:1fr}
+  .hero-stats b{font-size:21px}
+  .float-card{max-width:150px;font-size:11.5px;padding:9px 11px}
+  .fc-a{left:-2px}
+  .fc-b{right:-2px}
+  .to-top{right:12px;bottom:14px;width:40px;height:40px}
+  .announce-in{font-size:12.5px;padding:7px var(--pad)}
+  .rank-item{grid-template-columns:34px 1fr auto}
+  .rank-score{font-size:12px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none !important;transition:none !important;scroll-behavior:auto !important}
+  html{scroll-behavior:auto}
+  .btn:hover,.tag-index a:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="stick-wrap">
+  <div class="announce" id="announce">
+    <div class="announce-in">
+      <b>童颜长辈韩漫</b>
+      <span class="ann-txt">11 月 7 日更新：〈二十岁的外婆〉第 61 话「户口本年龄」上线，〈我奶奶是练习生〉第 34 话补更；本周条目库新增 6 部、下架 2 部盗链转载条目。</span>
+      <a class="ann-link" href="/#latest">查看更新日历 →</a>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="head-in">
+      <a class="brand" href="/#top" aria-label="回到首页顶部">
+        <svg viewBox="0 0 64 64" role="img" aria-label="两代人生肖轮廓标志">
+          <rect width="64" height="64" rx="14" fill="#f7e3d8"/>
+          <circle cx="24" cy="25" r="10.5" fill="#c2603f"/>
+          <circle cx="24" cy="25" r="4.2" fill="#f7e3d8"/>
+          <circle cx="42" cy="37" r="8.5" fill="#8a6bb5"/>
+          <circle cx="42" cy="37" r="3.4" fill="#f7e3d8"/>
+          <path d="M14 51h36" stroke="#2c2622" stroke-width="3.4" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-txt">
+          <span class="brand-logo">童颜长辈韩漫</span>
+          <span class="brand-sub">AGE-GAP FAMILY COMICS</span>
+        </span>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="siteNav">
+        <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span>栏目
+      </button>
+
+      <nav class="nav" id="siteNav" aria-label="主题栏目导航">
+        <a href="/#overview">领域概览</a>
+        <a href="/#picks">精选推荐</a>
+        <a href="/#latest">更新日历</a>
+        <a href="/#channels">分类索引</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">阅读指南</a>
+        <a href="/#faq">常见问答</a>
+        <a href="/#review">读者留言</a>
+        <a href="/#news">相关资讯</a>
+      </nav>
+
+      <div class="head-right">
+        <div class="search" role="search">
+          <label for="siteSearch" class="visually-hidden" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">站内搜索</label>
+          <input id="siteSearch" type="search" placeholder="搜作品 / 角色 / 平台" autocomplete="off">
+          <button type="button" id="searchBtn">查找</button>
+        </div>
+        <a class="entry-btn" href="/#bookmark">我的追更</a>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main id="top">
+  <!-- 首屏 -->
+  <section class="hero" aria-labelledby="heroTitle">
+    <div class="hero-in">
+      <div>
+        <span class="hero-kicker"><span class="dot"></span>家族年龄反差 · 角色档案库</span>
+        <h1 id="heroTitle">童颜长辈韩漫</h1>
+        <p class="hero-desc">
+          一群<strong>外表停在二十岁、户口本却写着六十岁</strong>的角色，撑起了韩国网漫近三年最稳定的一条分支：外婆去孙女的大学食堂蹭饭、奶奶被误认成练习生室友、叔叔在家族群里发表情包被当成叔叔的朋友。
+          这里按<strong>作品条目、话数节点、平台连载状态</strong>建档，把“看着像同龄人，实为长辈”的设定拆成可检索的线索。
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="/#picks">先看 8 部代表条目</a>
+          <a class="btn btn-ghost" href="/#guide">怎么挑第一本</a>
+        </div>
+        <div class="hero-stats">
+          <div><b>214</b><span>建档作品条目</span></div>
+          <div><b>37</b><span>在连载 / 待更</span></div>
+          <div><b>11-07</b><span>最近一次条目校准</span></div>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <svg class="bg-shape" viewBox="0 0 420 340" role="presentation">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#f2d9cb"/>
+              <stop offset="1" stop-color="#e4dcf1"/>
+            </linearGradient>
+          </defs>
+          <rect x="30" y="24" width="360" height="290" rx="26" fill="url(#g1)" opacity=".55"/>
+          <circle cx="152" cy="140" r="62" fill="none" stroke="#c2603f" stroke-width="2.4" stroke-dasharray="5 7"/>
+          <circle cx="272" cy="206" r="46" fill="none" stroke="#8a6bb5" stroke-width="2.4" stroke-dasharray="4 6"/>
+          <circle cx="152" cy="140" r="26" fill="#c2603f" opacity=".86"/>
+          <circle cx="272" cy="206" r="20" fill="#8a6bb5" opacity=".86"/>
+          <path d="M60 268h300" stroke="#2c2622" stroke-width="2.6" stroke-linecap="round" opacity=".72"/>
+          <path d="M96 96h20M106 86v20" stroke="#c2603f" stroke-width="2" stroke-linecap="round"/>
+          <path d="M330 128h18" stroke="#8a6bb5" stroke-width="2" stroke-linecap="round"/>
+          <text x="152" y="146" font-family="Georgia,serif" font-size="13" fill="#fbf7f1" text-anchor="middle">1964</text>
+          <text x="272" y="211" font-family="Georgia,serif" font-size="11" fill="#fbf7f1" text-anchor="middle">2001</text>
+        </svg>
+        <div class="float-card fc-a"><b>二十岁的外婆</b>孙女开学典礼，外婆被当成研究生新生<span class="tag">校园 · 家族</span></div>
+        <div class="float-card fc-b"><b>我奶奶是练习生</b>63 岁的声乐课学员与偶像企划<span class="tag">音乐 · 综艺</span></div>
+        <div class="float-card fc-c"><b>户主是我侄子</b>长辈不老的年代设定与继承线<span class="tag">年代 · 家族</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="layout">
+      <!-- 主列 -->
+      <div class="main-col">
+
+        <div class="search-feedback" id="searchFeedback" role="status" aria-live="polite"></div>
+
+        <!-- 1 领域概览 -->
+        <section class="block" id="overview" aria-labelledby="h-overview">
+          <div class="block-head">
+            <h2 id="h-overview">领域概览</h2>
+            <p class="lead">这条分支不是靠“返老还童”的奇幻设定撑场，而是把年龄差塞进日常场景里，让户口、称呼、座位、体检单这些具体物件制造摩擦。</p>
+          </div>
+          <div class="overview-grid">
+            <article class="ov">
+              <span class="num">01</span>
+              <h3>设定从哪来</h3>
+              <p>2022 年后，Naver 系列与 KakaoPage 的家庭题材中，出现一批把“看起来年轻的长辈”作为固定卖点的作品。多数不解释原因，只用体检报告、身份证照片、旧相册交代落差。</p>
+              <div class="kv"><span class="pill brand">家庭日常</span><span class="pill">外貌年龄差</span></div>
+            </article>
+            <article class="ov">
+              <span class="num">02</span>
+              <h3>读者在找什么</h3>
+              <p>常见检索词集中在“外婆比孙女还像学生”“奶奶被认成姐姐”这类具体错位场景，以及某话里长辈第一次被同龄人搭讪的桥段，而非笼统的家族题材。</p>
+              <div class="kv"><span class="pill violet">身份误会</span><span class="pill">称呼错乱</span></div>
+            </article>
+            <article class="ov">
+              <span class="num">03</span>
+              <h3>和同类怎么分</h3>
+              <p>与“穿越回少年”不同，长辈本人清楚自己的年纪，故事重心落在熟人社会如何重新排列关系：班主任怎么称呼、邻居怎么登记、家族祭祀谁站前排。</p>
+              <div class="kv"><span class="pill green">年代线索</span><span class="pill">继承关系</span></div>
+            </article>
+          </div>
+        </section>
+
+        <!-- 2 精选推荐 -->
+        <section class="block" id="picks" aria-labelledby="h-picks">
+          <div class="block-head">
+            <h2 id="h-picks">精选内容推荐</h2>
+            <p class="lead">按“错位场景是否成立”筛出 8 部，附上各自主打的误会类型，方便直接对照。</p>
+          </div>
+          <div class="feature-grid">
+            <article class="feat big">
+              <img src="https://picsum.photos/seed/tongyan-01/720/420" width="720" height="420" loading="lazy" alt="校园台阶上两位年龄相近的女性并排坐着翻看学生证">
+              <div class="fb">
+                <div class="meta"><span class="pill brand">主推</span><span>校园 · 家族</span></div>
+                <h3>二十岁的外婆</h3>
+                <p>李春姬 1964 年生，脸停在 2003 年。孙女入学那天，她被新生接待处拦下填表，理由是“家长请去旁边等候区”。作品把每一次解释都写成手续流程：改不了户口，就先改称呼。</p>
+                <div class="meta"><span>Naver 系列</span><span class="sep"></span><span>每周四更</span><span class="sep"></span><span>已更 61 话</span></div>
+              </div>
+            </article>
+            <article class="feat">
+              <img src="https://picsum.photos/seed/tongyan-02/460/300" width="460" height="300" loading="lazy" alt="练歌房里一位银发女性对着麦克风练习发声">
+              <div class="fb">
+                <div class="meta"><span class="pill violet">音乐</span></div>
+                <h3>我奶奶是练习生</h3>
+                <p>63 岁的姜末顺报名声乐课，被企划公司误录进女团预备名单。评委夸她“状态管理得好”，她答“我每天五点起来腌泡菜”。</p>
+                <div class="meta"><span>KakaoPage</span><span class="sep"></span><span>已更 34 话</span></div>
+              </div>
+            </article>
+            <article class="feat">
+              <img src="https://picsum.photos/seed/tongyan-03/460/300" width="460" height="300" loading="lazy" alt="老宅客厅里一张全家福相框放在木质柜子上">
+              <div class="fb">
+                <div class="meta"><span class="pill green">年代</span></div>
+                <h3>户主是我侄子</h3>
+                <p>户籍上 1958 年出生的长辈，因旧档案登记错误成了“户主侄子”。全篇围绕一张 1979 年的户口誊本展开，家族祭祀座次是第一处爆发点。</p>
+                <div class="meta"><span>Naver 系列</span><span class="sep"></span><span>已更 48 话</span></div>
+              </div>
+            </article>
+            <article class="feat">
+              <img src="https://picsum.photos/seed/tongyan-04/460/300" width="460" height="300" loading="lazy" alt="便利店收银台前两位顾客互相递钱包">
+              <div class="fb">
+                <div class="meta"><span class="pill amber">日常</span></div>
+                <h3>隔壁住着我姑婆</h3>
+                <p>独居青年与同栋楼的“年轻邻居”因快递混单结识，后来才知道对方是父亲的姑姑。误会从物业登记簿开始，结束在一张 1996 年的门牌照片上。</p>
+                <div class="meta"><span>KakaoPage</span><span class="sep"></span><span>已更 27 话</span></div>
+              </div>
+            </article>
+            <article class="feat">
+              <img src="https://picsum.photos/seed/tongyan-05/460/300" width="460" height="300" loading="lazy" alt="医院走廊里一位穿米色外套的女性拿着体检报告">
+              <div class="fb">
+                <div class="meta"><span class="pill">医疗 · 家庭</span></div>
+                <h3>六十岁的主治医生是我奶奶</h3>
+                <p>实习医生发现科室主任是自己的奶奶，诊室里所有人称呼她“老师”。体检中心一章用骨密度数据把设定落到纸面。</p>
+                <div class="meta"><span>Naver 系列</span><span class="sep"></span><span>已更 39 话</span></div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- 3 最新更新 -->
+        <section class="block" id="latest" aria-labelledby="h-latest">
+          <div class="block-head">
+            <h2 id="h-latest">最新更新与补更记录</h2>
+            <p class="lead">按 KST 记，平台公告外的补更也列进来，方便核对章节号。</p>
+          </div>
+          <div class="timeline">
+            <div class="tl-item">
+              <div class="tl-date"><b>11 月 7 日</b>周五</div>
+              <div class="tl-body">
+                <h3>〈二十岁的外婆〉第 61 话「户口本年龄」</h3>
+                <p>李春姬在孙女的学生证复印件上看到自己的出生年份被印错，去居民中心更正，被告知需旧式誊本。</p>
+              </div>
+              <span class="tl-tag">新章</span>
+            </div>
+            <div class="tl-item">
+              <div class="tl-date"><b>11 月 7 日</b>周五</div>
+              <div class="tl-body">
+                <h3>〈我奶奶是练习生〉第 34 话补更</h3>
+                <p>原定 11 月 5 日更新延期两天，作者在作话里写“声乐谱画错了三个音”。本话出现新评委角色。</p>
+              </div>
+              <span class="tl-tag">补更</span>
+            </div>
+            <div class="tl-item">
+              <div class="tl-date"><b>11 月 5 日</b>周三</div>
+              <div class="tl-body">
+                <h3>〈户主是我侄子〉第 28 话休载公告</h3>
+                <p>平台标注“作者健康原因，两周后恢复”，第 29 话预计 11 月 19 日上线。</p>
+              </div>
+              <span class="tl-tag">休载</span>
+            </div>
+            <div class="tl-item">
+              <div class="tl-date"><b>11 月 2 日</b>周日</div>
+              <div class="tl-body">
+                <h3>〈隔壁住着我姑婆〉进入第二季</h3>
+                <p>第一季 27 话完结，第二季首话从物业登记簿的旧照片切入，主角换为孙辈视角。</p>
+              </div>
+              <span class="tl-tag">季更</span>
+            </div>
+            <div class="tl-item">
+              <div class="tl-date"><b>10 月 30 日</b>周四</div>
+              <div class="tl-body">
+                <h3>条目库校准：下架 2 部盗链转载</h3>
+                <p>《我的外婆是校花》《六十岁的同桌》两部条目因非官方汉化源被移出索引，原作仍在连载。</p>
+              </div>
+              <span class="tl-tag">条目</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- 4 分类入口 -->
+        <section class="block" id="channels" aria-labelledby="h-channels">
+          <div class="block-head">
+            <h2 id="h-channels">分类入口</h2>
+            <p class="lead">按错位发生的场景切分，比按平台切更接近读者的检索习惯。</p>
+          </div>
+          <div class="tag-index">
+            <a href="/#picks">校园食堂里的外婆 <span class="c">18</span></a>
+            <a href="/#picks">被认成姐姐的奶奶 <span class="c">24</span></a>
+            <a href="/#picks">家族祭祀座次之争 <span class="c">9</span></a>
+            <a href="/#picks">户口本年龄登记错误 <span class="c">12</span></a>
+            <a href="/#picks">长辈参加偶像选秀 <span class="c">7</span></a>
+            <a href="/#picks">旧相册与出生年份 <span class="c">21</span></a>
+            <a href="/#picks">邻居登记簿误会 <span class="c">11</span></a>
+            <a href="/#picks">医院科室里的长辈 <span class="c">6</span></a>
+            <a href="/#picks">语音聊天辈分错乱 <span class="c">15</span></a>
+            <a href="/#picks">继承线里的年轻户主 <span class="c">8</span></a>
+            <a href="/#picks">体检报告与骨密度 <span class="c">5</span></a>
+            <a href="/#picks">家族群表情包事故 <span class="c">13</span></a>
+          </div>
+        </section>
+
+        <!-- 5 深度解析 -->
+        <section class="block" id="deep" aria-labelledby="h-deep">
+          <div class="block-head">
+            <h2 id="h-deep">深度解析</h2>
+            <p class="lead">全页唯一的长阅读区，观点可以拿去引用，也欢迎拿具体章节反驳。</p>
+          </div>
+          <article class="deep">
+            <p>把“童颜长辈”当卖点容易，难的是让长辈在故事里持续有行动理由。多数作品第一话靠误会开场，第二话就露出短板：长辈一旦被识破，戏剧张力立刻塌陷。</p>
+
+            <h3>判断一：设定的寿命取决于“手续”，而不是“颜值”</h3>
+            <p>以《二十岁的外婆》为例，李春姬 1964 年 3 月生，孙女金河恩 2001 年 9 月生。第 6 话她陪孙女办入学，接待处让学生填“监护人关系”，她写“外祖母”，对方改成了“姐姐代填”，理由是“字迹太年轻”。这一幕之后，作品把冲突交给了居民中心、学校系统、保险受益人三处手续；第 41 话甚至专门用两页画修改户籍誊本的流程。反过来，《六十岁的主治医生是我奶奶》第 12 话以后回避了所有行政场景，误会只剩同事起哄，节奏明显变松。</p>
+            <div class="callout">
+              <b>可核对的说法：</b>把“童颜”当作视觉设定，故事只能撑 8 到 12 话；把它写成制度摩擦，才能拉出 40 话以上的家族叙事。两相对照，前者的高光集中在第 1 至 3 话，后者在第 30 话仍有新场景。
+            </div>
+
+            <h3>判断二：读者记住的是称呼变化，不是年龄数字</h3>
+            <p>《隔壁住着我姑婆》第 9 话，物业管理员从“你姐姐”改口叫“姑婆”之后，主角当天把楼道灯换成了声控。第 17 话又出现相反方向：姑婆本人要求年轻邻居别叫她“姑婆”，改叫“英子姐”，因为“叫老了爬楼梯会累”。这个来回改变了两人相处距离，比任何出生年份都直观。相反，把年龄差靠旁白念出来的作品，评论区常出现“记不住谁是谁”的反馈，这是可查的读者措辞。</p>
+
+            <h3>判断三：家庭祭祀与继承线是这类作品最稀缺的素材</h3>
+            <p>《户主是我侄子》第 24 话把祭祀座次画成了一张俯视平面图：长辈坐上位，但户籍上他是侄子，因此负责端酒的是“侄子”。第 26 话出现争议，读者分成两派，一派认为座次应依族谱，一派认为应依户籍。平台该话留言 1,240 条，前 20 条高赞里有 13 条在讨论“户籍与族谱哪个先说”。这是设定落到可争议处的证据。多数同类作品只写学校与客厅，没碰过祖坟与继承。</p>
+
+            <div class="table-scroll">
+              <table class="judge-table">
+                <caption class="small" style="caption-side:bottom;text-align:left;padding-top:6px">把“设定是否成立”拆成可核对项，四格都满足才算站得住。</caption>
+                <thead>
+                  <tr><th>核对项</th><th>具体表现</th><th>可查证据</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>出生年份</td><td>1964 与 2001 同时出现</td><td>第 6 话户口复印件</td></tr>
+                  <tr><td>行政手续</td><td>更正誊本、保险受益人变更</td><td>第 41 话、第 52 话</td></tr>
+                  <tr><td>称呼变化</td><td>姐姐→姑婆→英子姐</td><td>第 9 话、第 17 话</td></tr>
+                  <tr><td>制度冲突</td><td>祭祀座次与户籍不一致</td><td>第 24、26 话留言板</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>判断四：把长辈写得太“懂事”，反而让读者出戏</h3>
+            <p>《我奶奶是练习生》第 21 话里，姜末顺在测评现场用方言说“我唱歌是为了不让自己在家里变成家具”。这句台词获赞 3,600 余次，原因不是煽情，而是它暴露了长辈的动机：她参加选秀不是为翻红，而是想有个出门理由。与之相对，同类型里把长辈写成一味包容、从不介意年龄的角色，评论区常见的吐槽是“像宣传片里的人”，这也是可引用的原话。</p>
+            <p>还有一个反向判断：外表年轻并不必然带来便利。第 33 话姜末顺在药店买钙片，店员推荐“给学生吃的咀嚼片”，她当场把身份证拍在柜台上。便利与冒犯是同一件事的两面，作品若只写便利，读者信不过。</p>
+          </article>
+        </section>
+
+        <!-- 6 体验指南 -->
+        <section class="block" id="guide" aria-labelledby="h-guide">
+          <div class="block-head">
+            <h2 id="h-guide">体验指南</h2>
+            <p class="lead">第一次接触这类作品，按下面四步走，能少踩进“设定讲三话还没落地”的坑。</p>
+          </div>
+          <div class="card pad">
+            <ol class="steps">
+              <li class="step">
+                <span class="n" aria-hidden="true"></span>
+                <div>
+                  <h3>先看第一话有没有给出可核对的出生年份</h3>
+                  <p>户口本、身份证、旧照片、毕业册任选其一。<b>给出两个年份</b>（长辈与孙辈）的作品，通常已经把错位想清楚了；只写“看起来年轻”的作品，后续多半靠旁白。</p>
+                </div>
+              </li>
+              <li class="step">
+                <span class="n" aria-hidden="true"></span>
+                <div>
+                  <h3>翻到第 8 至 12 话，看冲突是否换了场景</h3>
+                  <p>如果第 10 话还在同一间教室解释“她真的是我外婆”，说明作品在原地踏步。<b>好的条目会换到居民中心、药店、家族祭祀</b>这些新场地。</p>
+                </div>
+              </li>
+              <li class="step">
+                <span class="n" aria-hidden="true"></span>
+                <div>
+                  <h3>确认连载状态再决定追更</h3>
+                  <p>平台页面会标“每周四”“隔周”“休载中”。<b>休载超过三周</b>的条目先收藏，不急着每周等；补更公告通常写在作话栏，不在首页。</p>
+                </div>
+              </li>
+              <li class="step">
+                <span class="n" aria-hidden="true"></span>
+                <div>
+                  <h3>挑评论区看两派争议，比看评分更有用</h3>
+                  <p>祭祀座次、户籍与族谱哪个优先、长辈该不该被叫“姐”这类话题，能反映作品是否真的在处理代际关系。<b>只夸画风的评论</b>，参考价值有限。</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+        <!-- 7 对照面板 -->
+        <section class="block" id="compare" aria-labelledby="h-compare">
+          <div class="block-head">
+            <h2 id="h-compare">两条常见路线的对照</h2>
+            <p class="lead">同样是“长辈不老”，写校园误会和写家族制度，读者拿到的东西完全不同。</p>
+          </div>
+          <div class="compare">
+            <div class="cmp-col">
+              <h3>校园误会线 <span class="badge">轻喜剧</span></h3>
+              <ul>
+                <li><b>场景：</b>食堂、宿舍、新生接待处，多数在校园内完成</li>
+                <li><b>冲突来源：</b>同学认错辈分、老师点名尴尬</li>
+                <li><b>代表作：</b>《二十岁的外婆》前 20 话</li>
+                <li><b>风险：</b>误会重复三次后，读者开始跳过解释段落</li>
+                <li><b>适合：</b>想找轻松日常、每天看两话的读者</li>
+              </ul>
+            </div>
+            <div class="cmp-col">
+              <h3>家族制度线 <span class="badge">正剧向</span></h3>
+              <ul>
+                <li><b>场景：</b>居民中心、祖坟、继承公证处、旧宅</li>
+                <li><b>冲突来源：</b>户籍与族谱不一致、座次与称谓冲突</li>
+                <li><b>代表作：</b>《户主是我侄子》第 20 话以后</li>
+                <li><b>风险：</b>手续流程画得太细，节奏会拖</li>
+                <li><b>适合：</b>想看清代际关系怎么被制度塑造的读者</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- 8 榜单 -->
+        <section class="block" id="board" aria-labelledby="h-board">
+          <div class="block-head">
+            <h2 id="h-board">条目关注度榜</h2>
+            <p class="lead">按站内 11 月 1 日至 7 日的收藏与追更增量排序，非平台官方数据。</p>
+          </div>
+          <div class="card pad">
+            <ul class="rank-list">
+              <li class="rank-item">
+                <span class="rank-no">01</span>
+                <div class="rank-body"><h3>二十岁的外婆</h3><p>第 61 话户口本年龄上线，单周收藏增量居首</p></div>
+                <span class="rank-score">+1,842</span>
+              </li>
+              <li class="rank-item">
+                <span class="rank-no">02</span>
+                <div class="rank-body"><h3>我奶奶是练习生</h3><p>补更第 34 话，声乐测评段落被反复截图</p></div>
+                <span class="rank-score">+1,309</span>
+              </li>
+              <li class="rank-item">
+                <span class="rank-no">03</span>
+                <div class="rank-body"><h3>户主是我侄子</h3><p>休载前最后一话，祭祀座次争议仍在发酵</p></div>
+                <span class="rank-score">+974</span>
+              </li>
+              <li class="rank-item">
+                <span class="rank-no">04</span>
+                <div class="rank-body"><h3>隔壁住着我姑婆</h3><p>第二季首话换视角，物业登记簿成线索核心</p></div>
+                <span class="rank-score">+861</span>
+              </li>
+              <li class="rank-item">
+                <span class="rank-no">05</span>
+                <div class="rank-body"><h3>六十岁的主治医生是我奶奶</h3><p>体检中心篇章回归，骨密度数据被读者拿来核对</p></div>
+                <span class="rank-score">+703</span>
+              </li>
+              <li class="rank-item">
+                <span class="rank-no">06</span>
+                <div class="rank-body"><h3>家族群里的表情包事故</h3><p>短篇集，每话一个称呼误会，适合零散阅读</p></div>
+                <span class="rank-score">+512</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 9 FAQ -->
+        <section class="block" id="faq" aria-labelledby="h-faq">
+          <div class="block-head">
+            <h2 id="h-faq">常见问答</h2>
+            <p class="lead">问题来自站内检索记录与读者留言，答案以作品内可核对的内容为准。</p>
+          </div>
+          <div class="faq">
+            <details class="qa">
+              <summary>外婆长得比孙女还年轻，这种设定在韩国网漫里常见吗？</summary>
+              <div class="ans">2022 年之后逐渐形成小分支，<b>并非主流题材</b>。目前能稳定连载到 40 话以上的不足十部，多数集中在家门题材与校园日常的交叉带上。判断是否为正式分支，可以看作品是否给出出生年份与行政手续两处细节。</div>
+            </details>
+            <details class="qa">
+              <summary>《二十岁的外婆》第 61 话里户口本到底哪里印错了？</summary>
+              <div class="ans">李春姬的出生年份被误录为 1984 年，与她的实际 1964 年差了二十岁。<b>第 41 话出现过旧式誊本</b>，第 61 话去居民中心更正时，工作人员要求出示 1979 年的原始登记页，这段是本话主要情节。</div>
+            </details>
+            <details class="qa">
+              <summary>长辈参加偶像选秀的桥段，是真人真事改编吗？</summary>
+              <div class="ans">《我奶奶是练习生》标注为虚构。作品中出现的评委、经纪公司均为化名。<b>韩国确有中老年声乐课程与选秀节目</b>，但剧中 63 岁进入女团预备名单的情节属于设定，不是纪实。</div>
+            </details>
+            <details class="qa">
+              <summary>家族祭祀座次应该按户籍还是按族谱？</summary>
+              <div class="ans">这是《户主是我侄子》第 24 至 26 话的争议核心。<b>作品内两派都有角色支持</b>，没有给出定论。实际操作中多数韩国家族以族谱与长辈年龄为主，户籍只影响法律文书，不影响座次——但这一点在作品中是角色争论的对象，不是官方解释。</div>
+            </details>
+            <details class="qa">
+              <summary>想找没有恋爱线、只写家庭关系的作品，有推荐吗？</summary>
+              <div class="ans">可以从《户主是我侄子》和《隔壁住着我姑婆》入手，两部主线都是亲属关系与居住登记，<b>感情线占比很低</b>。若偏好轻松节奏，先看《家族群里的表情包事故》短篇集，每话独立。</div>
+            </details>
+            <details class="qa">
+              <summary>这类作品在哪里连载，需要付费吗？</summary>
+              <div class="ans">多数在 Naver 系列与 KakaoPage 连载，<b>通常前几话免费、后续按话付费或等免费券</b>。站内只做条目索引，不提供阅读入口，也不转载页面。</div>
+            </details>
+          </div>
+        </section>
+
+        <!-- 10 用户评论 -->
+        <section class="block" id="review" aria-labelledby="h-review">
+          <div class="block-head">
+            <h2 id="h-review">读者留言</h2>
+            <p class="lead">保留原文语气，包括不客气的部分。</p>
+          </div>
+          <div class="review-list">
+            <article class="review">
+              <div class="rv-head">
+                <span class="avatar" aria-hidden="true">河</span>
+                <span class="rv-name">河恩的学号</span>
+                <span class="stars" aria-label="四星">★★★★</span>
+                <span class="rv-time">11 月 7 日 22:14</span>
+              </div>
+              <p class="rv-text">第 61 话那张户口本复印件画得挺准，<b>1984 和 1964 差一个数字</b>，我暂停看了两遍才认出来。就是居民中心那段台词有点密，手机上看字小。</p>
+              <p class="rv-ref">指向：〈二十岁的外婆〉第 61 话</p>
+            </article>
+            <article class="review">
+              <div class="rv-head">
+                <span class="avatar v" aria-hidden="true">末</span>
+                <span class="rv-name">末顺的泡菜坛</span>
+                <span class="stars" aria-label="三星">★★★</span>
+                <span class="rv-time">11 月 7 日 20:02</span>
+              </div>
+              <p class="rv-text">补更可以理解，但<b>第 34 话的声乐测评拖了整整九页</b>，前八话攒的期待掉了一半。评委那句“你气息比练习生稳”倒是不错。</p>
+              <p class="rv-ref">指向：〈我奶奶是练习生〉第 34 话</p>
+            </article>
+            <article class="review">
+              <div class="rv-head">
+                <span class="avatar g" aria-hidden="true">户</span>
+                <span class="rv-name">誊本收藏者</span>
+                <span class="stars" aria-label="五星">★★★★★</span>
+                <span class="rv-time">11 月 6 日 09:41</span>
+              </div>
+              <p class="rv-text">祭祀座次那张俯视平面图画得太细了，<b>谁端酒、谁坐上位、谁在门外等</b>，一眼看完就明白冲突在哪。休载两周有点难受，但愿意等。</p>
+              <p class="rv-ref">指向：〈户主是我侄子〉第 24 话</p>
+            </article>
+            <article class="review">
+              <div class="rv-head">
+                <span class="avatar a" aria-hidden="true">灯</span>
+                <span class="rv-name">楼道声控灯</span>
+                <span class="stars" aria-label="四星">★★★★</span>
+                <span class="rv-time">11 月 5 日 13:27</span>
+              </div>
+              <p class="rv-text">第二季换孙辈视角我一开始不习惯。<b>物业登记簿那张 1996 年的门牌照片</b>出来之后才反应过来前面埋了线。英子姐这个称呼留得好。</p>
+              <p class="rv-ref">指向：〈隔壁住着我姑婆〉第二季首话</p>
+            </article>
+            <article class="review">
+              <div class="rv-head">
+                <span class="avatar" aria-hidden="true">骨</span>
+                <span class="rv-name">骨密度 0.82</span>
+                <span class="stars" aria-label="两星">★★</span>
+                <span class="rv-time">11 月 4 日 18:53</span>
+              </div>
+              <p class="rv-text">说实话这条分支现在同质化严重，<b>十部里八部是外婆进校园</b>。我奶奶那部至少换了练歌房和药店，别的还在食堂打转。</p>
+              <p class="rv-ref">指向：分类整体评价</p>
+            </article>
+            <article class="review">
+              <div class="rv-head">
+                <span class="avatar v" aria-hidden="true">座</span>
+                <span class="rv-name">第三排靠窗</span>
+                <span class="stars" aria-label="四星">★★★★</span>
+                <span class="rv-time">11 月 3 日 11:08</span>
+              </div>
+              <p class="rv-text">第 26 话评论区两派吵得凶，我站族谱那派，但作品没给定论这点做得对。<b>户籍影响的是保险受益人，不是磕头顺序</b>，作者借角色嘴说出来，算是克制。</p>
+              <p class="rv-ref">指向：〈户主是我侄子〉第 26 话</p>
+            </article>
+          </div>
+        </section>
+
+        <!-- 11 相关资讯 -->
+        <section class="block" id="news" aria-labelledby="h-news">
+          <div class="block-head">
+            <h2 id="h-news">相关资讯</h2>
+            <p class="lead">平台公告、作者作话与条目变动，按时间倒序。</p>
+          </div>
+          <div class="news-list">
+            <div class="news-item">
+              <div>
+                <h3>Naver 系列 11 月家庭题材专题页上线</h3>
+                <p>专题收录 14 部含长辈角色的作品，页面按“代际关系”分组，未使用年龄标签。</p>
+              </div>
+              <span class="news-src">Naver 系列公告 · 11-06</span>
+            </div>
+            <div class="news-item">
+              <div>
+                <h3>《户主是我侄子》作者作话说明休载原因</h3>
+                <p>原文措辞为“需住院两周，分镜已画到第 30 话开头”，未提具体病情，平台将恢复日期标为 11 月 19 日。</p>
+              </div>
+              <span class="news-src">KakaoPage 作话 · 11-05</span>
+            </div>
+            <div class="news-item">
+              <div>
+                <h3>《我奶奶是练习生》单行本第 3 卷收录加笔</h3>
+                <p>加笔补画第 21 话测评现场的后台段落，共 6 页，纸质版与电子版同步。</p>
+              </div>
+              <span class="news-src">出版社书目 · 11-03</span>
+            </div>
+            <div class="news-item">
+              <div>
+                <h3>部分汉化转载页被平台要求下架</h3>
+                <p>涉及《我的外婆是校花》《六十岁的同桌》两部条目，原作仍在连载，条目库已移除非官方源链接。</p>
+              </div>
+              <span class="news-src">平台版权通知 · 10-30</span>
+            </div>
+            <div class="news-item">
+              <div>
+                <h3>韩国网漫评论研究：家族题材留言多集中于称谓</h3>
+                <p>一份 10 月公开的论文预印本统计了 2024 至 2025 年 12 部家庭题材作品，称“称谓变化”是留言高频词，具体样本量未在摘要中给出。</p>
+              </div>
+              <span class="news-src">预印本摘要 · 10-28</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- 12 相关推荐 -->
+        <section class="block" id="reco" aria-labelledby="h-reco">
+          <div class="block-head">
+            <h2 id="h-reco">相关推荐</h2>
+            <p class="lead">按读者的下一步检索意图给出的长尾词入口。</p>
+          </div>
+          <div class="reco">
+            <a href="/#picks">外婆比孙女还像学生</a>
+            <a href="/#picks">奶奶被认成姐姐的韩漫</a>
+            <a href="/#picks">长辈参加选秀的网漫</a>
+            <a href="/#picks">家族祭祀座次争议</a>
+            <a href="/#picks">户口本出生年份登记错误</a>
+            <a href="/#picks">老人外表年轻的家庭漫画</a>
+            <a href="/#picks">代际称呼错乱日常</a>
+            <a href="/#picks">旧相册里的出生年份</a>
+            <a href="/#picks">住院医师是自家奶奶</a>
+            <a href="/#picks">继承线与年轻户主</a>
+            <a href="/#picks">在韩国家庭题材里找非恋爱线</a>
+            <a href="/#latest">休载与补更记录</a>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- 侧栏 -->
+      <aside class="side-col" aria-label="侧栏导航与速览">
+        <div class="side-card">
+          <h3>本页栏目</h3>
+          <nav class="side-nav" id="sideNav" aria-label="页内导航">
+            <a href="/#overview">领域概览</a>
+            <a href="/#picks">精选内容推荐</a>
+            <a href="/#latest">最新更新</a>
+            <a href="/#channels">分类入口</a>
+            <a href="/#deep">深度解析</a>
+            <a href="/#guide">体验指南</a>
+            <a href="/#compare">路线对照</a>
+            <a href="/#board">关注度榜</a>
+            <a href="/#faq">常见问答</a>
+            <a href="/#review">读者留言</a>
+            <a href="/#news">相关资讯</a>
+            <a href="/#reco">相关推荐</a>
+          </nav>
+        </div>
+
+        <div class="side-card" id="bookmark">
+          <h3>本周速记</h3>
+          <ul class="side-list">
+            <li><span class="i">·</span><span>11 月 7 日两话同日更新，平台时间均为 22:00 KST</span></li>
+            <li><span class="i">·</span><span>《户主是我侄子》休载中，恢复日 11 月 19 日</span></li>
+            <li><span class="i">·</span><span>条目库现收 214 部，本周移出 2 部非官方源</span></li>
+            <li><span class="i">·</span><span>《我奶奶是练习生》单行本第 3 卷含 6 页加笔</span></li>
+          </ul>
+        </div>
+
+        <div class="side-card">
+          <h3>常被一起搜</h3>
+          <div class="reco">
+            <a href="/#picks">外婆学生证</a>
+            <a href="/#picks">奶奶练歌房</a>
+            <a href="/#picks">户籍誊本剧情</a>
+            <a href="/#picks">家族群表情包</a>
+            <a href="/#picks">老旧门牌照片</a>
+          </div>
+        </div>
+
+        <div class="side-note">
+          条目信息以平台公告与作品内页为准；章节号、休载日期、加笔页数都可回原作核对。站内不提供阅读源。
+        </div>
+      </aside>
+    </div>
+  </div>
+</main>
+
+<footer class="footer" id="footer">
+  <div class="foot-in">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <div class="fb-logo">
+          <svg viewBox="0 0 64 64" role="img" aria-label="双圆轮廓标志">
+            <rect width="64" height="64" rx="14" fill="#453a33"/>
+            <circle cx="24" cy="25" r="10.5" fill="#e08a68"/>
+            <circle cx="24" cy="25" r="4.2" fill="#453a33"/>
+            <circle cx="42" cy="37" r="8.5" fill="#a98fd0"/>
+            <circle cx="42" cy="37" r="3.4" fill="#453a33"/>
+            <path d="M14 51h36" stroke="#d8cbbd" stroke-width="3.4" stroke-linecap="round"/>
+          </svg>
+          <span>童颜长辈韩漫</span>
+        </div>
+        <p>为“外观年龄与户口年龄不一致”的家族叙事建条目：出生年份、称呼变更、行政手续、连载状态，四项分开记。</p>
+      </div>
+      <div class="foot-col">
+        <h4>内容栏目</h4>
+        <a href="/#overview">领域概览</a>
+        <a href="/#picks">精选内容推荐</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">体验指南</a>
+        <a href="/#board">关注度榜</a>
+      </div>
+      <div class="foot-col">
+        <h4>条目检索</h4>
+        <a href="/#latest">更新与补更</a>
+        <a href="/#channels">分类入口</a>
+        <a href="/#compare">路线对照</a>
+        <a href="/#reco">相关推荐</a>
+        <a href="/#faq">常见问答</a>
+      </div>
+      <div class="foot-col">
+        <h4>读者区</h4>
+        <a href="/#review">读者留言</a>
+        <a href="/#news">相关资讯</a>
+        <a href="/#bookmark">我的追更</a>
+        <a href="/#top">回到顶部</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>页脚更新时间 <b>2026-11-08</b>，对应正文可核对项：11 月 7 日两话更新记录、11 月 5 日休载公告、10 月 30 日条目移出。</span>
+      <span class="sp"></span>
+      <span>条目数据含示例信息，作品与平台信息以官方公告为准。</span>
+      <span>© 2026 童颜长辈韩漫条目库 · 非官方索引站</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="回到页面顶部">↑</button>
+
+<script>
+(function(){
+  var menuBtn = document.getElementById('menuBtn');
+  var siteNav = document.getElementById('siteNav');
+
+  if(menuBtn && siteNav){
+    menuBtn.addEventListener('click', function(){
+      var open = siteNav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    siteNav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A'){
+        siteNav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+      }
+    });
+    document.addEventListener('keydown', function(e){
+      if(e.key === 'Escape' && siteNav.classList.contains('open')){
+        siteNav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+        menuBtn.focus();
+      }
+    });
+  }
+
+  var toTop = document.getElementById('toTop');
+  var ticking = false;
+  function onScroll(){
+    if(ticking) return;
+    ticking = true;
+    requestAnimationFrame(function(){
+      if(window.scrollY > 520){ toTop.classList.add('show'); }
+      else { toTop.classList.remove('show'); }
+      ticking = false;
+    });
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* 侧栏滚动高亮 */
+  var sideLinks = Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var sections = sideLinks.map(function(a){
+    var id = a.getAttribute('href').replace('#','').replace('/','');
+    return document.getElementById(id);
+  }).filter(Boolean);
+
+  if('IntersectionObserver' in window && sections.length){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          var id = en.target.id;
+          sideLinks.forEach(function(a){
+            a.classList.toggle('on', a.getAttribute('href') === '/#' + id);
+          });
+        }
+      });
+    }, {rootMargin:'-120px 0px -60% 0px', threshold:0});
+    sections.forEach(function(s){ io.observe(s); });
+  }
+
+  /* 本地搜索 */
+  var input = document.getElementById('siteSearch');
+  var btn = document.getElementById('searchBtn');
+  var feedback = document.getElementById('searchFeedback');
+
+  var index = [];
+  document.querySelectorAll('main h2, main h3, main h1, main .tag-index a, main .reco a, main details.qa summary, main .rank-body h3, main .news-item h3').forEach(function(el){
+    var txt = (el.textContent || '').trim();
+    if(txt){ index.push({el: el, text: txt}); }
+  });
+
+  function clearMarks(){
+    document.querySelectorAll('mark[data-hit]').forEach(function(m){
+      var parent = m.parentNode;
+      parent.replaceChild(document.createTextNode(m.textContent), m);
+      parent.normalize();
+    });
+  }
+
+  function runSearch(){
+    var q = (input.value || '').trim();
+    clearMarks();
+    if(!q){
+      feedback.classList.remove('show');
+      feedback.innerHTML = '';
+      return;
+    }
+    var ql = q.toLowerCase();
+    var hits = index.filter(function(item){ return item.text.toLowerCase().indexOf(ql) !== -1; });
+    feedback.classList.add('show');
+    if(hits.length === 0){
+      feedback.innerHTML = '没有找到包含 <b>' + escapeHtml(q) + '</b> 的板块或条目。可以换成作品名、角色名或平台名再试，例如“外婆”“练习生”“祭祀”。';
+      return;
+    }
+    var names = hits.slice(0,5).map(function(h){
+      return '<a href="/#picks">' + escapeHtml(h.text.slice(0,26)) + '</a>';
+    }).join('、');
+    feedback.innerHTML = '找到 <b>' + hits.length + '</b> 处匹配：' + names + (hits.length > 5 ? ' 等' : '') + '。已定位到下方栏目。';
+    var first = hits[0].el;
+    var target = first.closest('section') || first;
+    if(target && target.scrollIntoView){
+      target.scrollIntoView({behavior:'smooth', block:'start'});
+    }
+  }
+
+  function escapeHtml(s){
+    return s.replace(/[&<>"']/g, function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+
+  btn.addEventListener('click', runSearch);
+  input.addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){ e.preventDefault(); runSearch(); }
+  });
+  input.addEventListener('input', function(){
+    if(!input.value.trim()){ clearMarks(); feedback.classList.remove('show'); feedback.innerHTML=''; }
+  });
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "童颜长辈韩漫",
+  "inLanguage": "zh-CN",
+  "description": "外观年龄与户口年龄不一致的家族题材韩漫条目索引，收录作品、章节节点与连载状态。"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "外婆长得比孙女还年轻，这种设定在韩国网漫里常见吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "2022 年之后逐渐形成小分支，并非主流题材。目前能稳定连载到 40 话以上的不足十部，多数集中在家门题材与校园日常的交叉带上。判断是否为正式分支，可以看作品是否给出出生年份与行政手续两处细节。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "《二十岁的外婆》第 61 话里户口本到底哪里印错了？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "李春姬的出生年份被误录为 1984 年，与她的实际 1964 年差了二十岁。第 41 话出现过旧式誊本，第 61 话去居民中心更正时，工作人员要求出示 1979 年的原始登记页。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "长辈参加偶像选秀的桥段，是真人真事改编吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "《我奶奶是练习生》标注为虚构。作品中出现的评委、经纪公司均为化名。韩国确有中老年声乐课程与选秀节目，但剧中 63 岁进入女团预备名单的情节属于设定，不是纪实。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "家族祭祀座次应该按户籍还是按族谱？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "这是《户主是我侄子》第 24 至 26 话的争议核心。作品内两派都有角色支持，没有给出定论。实际操作中多数韩国家族以族谱与长辈年龄为主，户籍只影响法律文书。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "想找没有恋爱线、只写家庭关系的作品，有推荐吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "可以从《户主是我侄子》和《隔壁住着我姑婆》入手，两部主线都是亲属关系与居住登记，感情线占比很低。若偏好轻松节奏，先看《家族群里的表情包事故》短篇集。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "这类作品在哪里连载，需要付费吗？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "多数在 Naver 系列与 KakaoPage 连载，通常前几话免费、后续按话付费或等免费券。站内只做条目索引，不提供阅读入口，也不转载页面。"
+      }
+    }
+  ]
+}
+</script>
+</body>
+  </html>
